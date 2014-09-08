@@ -6,8 +6,7 @@ import javax.persistence.Id;
  
 /**
  * Person entity
- * 
- * @author DevCrumb.com
+ *
  */
 @Entity
 public class Person {

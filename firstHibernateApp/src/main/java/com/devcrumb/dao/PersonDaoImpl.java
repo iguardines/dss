@@ -11,8 +11,7 @@ import com.devcrumb.model.Person;
  
 /**
  * DAO implementation for Person entity
- *  
- * @author DevCrumb.com
+ *
  */
 @Transactional
 public class PersonDaoImpl {

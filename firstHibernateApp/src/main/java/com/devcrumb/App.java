@@ -11,7 +11,6 @@ import com.devcrumb.model.Person;
 /**
  * App class with main method to test our DAO
  * 
- * @author DevCrumb.com
  */
 public class App {
      
@@ -19,13 +18,13 @@ public class App {
         ClassPathXmlApplicationContext context = new 
                   ClassPathXmlApplicationContext("applicationContext.xml");
         PersonDaoImpl dao = (PersonDaoImpl) context.getBean("personDao");
-        
+
         Person peter = new Person("Peter", "Sagan");
         Person nasta = new Person("Nasta", "Kuzminova");
-         
+
         dao.save(peter);
         dao.save(nasta);
-         
+
         List<Person> persons = dao.getAll();
         for (Person person : persons) {
             System.out.println(person);
